@@ -15,15 +15,15 @@ namespace LibrarySystem
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Borrow borrow = new Borrow();
-            PublicOperations.OpenForm(this, borrow);
-        }
-
         private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BorrowPic_Click(object sender, EventArgs e)
+        {
+            Borrow borrow = new Borrow();
+            PublicOperations.OpenForm(this, borrow);
         }
     }
 }
