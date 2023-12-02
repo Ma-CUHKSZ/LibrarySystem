@@ -25,5 +25,18 @@ namespace LibrarySystem
             Borrow borrow = new Borrow();
             PublicOperations.OpenForm(this, borrow);
         }
+
+        private void ManagePic_Click(object sender, EventArgs e)
+        {
+            Manage manage = new Manage();
+            PublicOperations.OpenForm(this, manage);
+          
+        }
+
+        private void UserInfoPic_Click(object sender, EventArgs e)
+        {
+            UserInfo userInfo = new UserInfo();
+            PublicOperations.OpenForm(this, userInfo);
+        }
     }
 }

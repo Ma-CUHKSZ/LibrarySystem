@@ -31,18 +31,18 @@ namespace LibrarySystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ManagePic = new System.Windows.Forms.PictureBox();
             this.BorrowPic = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UserInfoPic = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.searchBox = new LibrarySystem.SearchBox();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ManagePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BorrowPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserInfoPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -57,17 +57,6 @@ namespace LibrarySystem
             this.flowLayoutPanel1.Size = new System.Drawing.Size(258, 1024);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(416, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1307, 786);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // ManagePic
             // 
             this.ManagePic.Image = global::LibrarySystem.Properties.Resources.Manage1;
@@ -77,6 +66,7 @@ namespace LibrarySystem
             this.ManagePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ManagePic.TabIndex = 8;
             this.ManagePic.TabStop = false;
+            this.ManagePic.Click += new System.EventHandler(this.ManagePic_Click);
             // 
             // BorrowPic
             // 
@@ -108,6 +98,18 @@ namespace LibrarySystem
             this.UserInfoPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UserInfoPic.TabIndex = 9;
             this.UserInfoPic.TabStop = false;
+            this.UserInfoPic.Click += new System.EventHandler(this.UserInfoPic_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(416, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1307, 786);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // searchBox
             // 
@@ -131,11 +133,11 @@ namespace LibrarySystem
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomePage_FormClosing);
             this.Load += new System.EventHandler(this.HomPage_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ManagePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BorrowPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserInfoPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
