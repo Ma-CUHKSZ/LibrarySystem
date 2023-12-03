@@ -90,6 +90,7 @@ namespace LibrarySystem
             this.RegisterButton.TabIndex = 4;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // LoginButton
             // 
@@ -117,6 +118,8 @@ namespace LibrarySystem
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

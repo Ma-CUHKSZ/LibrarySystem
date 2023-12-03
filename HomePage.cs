@@ -10,11 +10,6 @@ namespace LibrarySystem
             InitializeComponent();
         }
 
-        private void HomPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

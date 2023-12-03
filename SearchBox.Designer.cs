@@ -29,40 +29,40 @@ namespace LibrarySystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchText = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchButton)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // searchText
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(3, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(908, 44);
-            this.textBox1.TabIndex = 0;
+            this.searchText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchText.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.searchText.Location = new System.Drawing.Point(3, 6);
+            this.searchText.Name = "searchText";
+            this.searchText.Size = new System.Drawing.Size(908, 44);
+            this.searchText.TabIndex = 0;
             // 
-            // pictureBox1
+            // searchButton
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::LibrarySystem.Properties.Resources.Search2;
-            this.pictureBox1.Location = new System.Drawing.Point(917, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.searchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchButton.Image = global::LibrarySystem.Properties.Resources.Search2;
+            this.searchButton.Location = new System.Drawing.Point(917, 6);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(45, 44);
+            this.searchButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchButton.TabIndex = 1;
+            this.searchButton.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.searchButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.searchText, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -78,7 +78,7 @@ namespace LibrarySystem
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SearchBox";
             this.Size = new System.Drawing.Size(965, 56);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchButton)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -87,8 +87,8 @@ namespace LibrarySystem
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox searchText;
+        private System.Windows.Forms.PictureBox searchButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

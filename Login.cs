@@ -23,14 +23,18 @@ namespace LibrarySystem
         private async void LoginButton_Click(object sender, EventArgs e)
         {
             //点击Login时触发
-            var values = new Dictionary<string, string>
+            var usernameL = new List<string>();
+            var passwordL = new List<string>();
+            usernameL.Add(username);
+            passwordL.Add(password);
+            var values = new Dictionary<string, List<string>>
             {
-                {"username", username},
-                {"password", password},
+                { "username", usernameL},
+                { "password", passwordL},
             };
-            Dictionary<string, string> result = await PublicOperations.NetWork("login", values);
+            var result = await PublicOperations.NetWork("login", values);
 
-            if (result["status"] == "True")
+            if (result["status"][0] == "True")
             {
                 HomePage homePage = new HomePage();
                 PublicOperations.OpenForm(this, homePage);
@@ -40,7 +44,6 @@ namespace LibrarySystem
                 MessageBox.Show("Wrong Password!", "Login Failed", MessageBoxButtons.OK,MessageBoxIcon.Error);
 
             }
-
 
         }
 
@@ -54,6 +57,38 @@ namespace LibrarySystem
         {
             password = PasswordText.Text;
 
+        }
+
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            PublicOperations.OpenForm(this, register);
+        }
+
+        private async void LoginForm_Load(object sender, EventArgs e)
+        {
+            //仅作占位用，没有实际意义
+            var connectL = new List<string>();
+            connectL.Add("connect");
+            var values = new Dictionary<string, List<string>>
+            {
+                { "connect", connectL},
+            };
+            //窗体启动时先尝试连接，减少卡顿
+            try
+            {
+                var result = await PublicOperations.NetWork("connect", values);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Fail to connect to the server! Please check your network!", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 
