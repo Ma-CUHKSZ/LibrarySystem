@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Net.Http;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace LibrarySystem
 {
@@ -40,20 +35,14 @@ namespace LibrarySystem
                 MessageBox.Show("Wrong Password!", "Login Failed", MessageBoxButtons.OK,MessageBoxIcon.Error);
 
             }
-
-
         }
-
         private void UserNameText_TextChanged(object sender, EventArgs e)
         {
             username = UserNameText.Text;
-
         }
-
         private void PasswordText_TextChanged(object sender, EventArgs e)
         {
             password = PasswordText.Text;
-
         }
     }
 
