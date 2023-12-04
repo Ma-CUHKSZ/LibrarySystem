@@ -106,14 +106,26 @@ namespace LibrarySystem
         private async void ReturnButton_Click(object sender, EventArgs e)
         {
             int index = BookList.SelectedIndex;
-            string name = book_name[index];
-            var nameL = new List<string>();
-            nameL.Add(name);
+            string bookname = book_name[index];
+            var booknameL = new List<string>();
+            var usernameL = new List<string>();
+            booknameL.Add(bookname);
+            usernameL.Add(PublicOperations.myUID);
             var values = new Dictionary<string, List<string>>
             {
-                { "book_name", nameL},
+                { "username", usernameL },
+                { "book_name", booknameL},
             };
-            var result = await PublicOperations.NetWork("return", values);
+            var result = await PublicOperations.NetWork("return_book", values);
+
+            if (result["status"][0] == "True")
+            {
+                Status.Text = "RETURN SUCCESS";
+            }
+            else
+            {
+                Status.Text = "RETURN FAILED!\n" + result["reason"][0];
+            }
         }
     }
 }

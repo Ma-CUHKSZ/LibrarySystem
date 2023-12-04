@@ -9,9 +9,11 @@ using Newtonsoft.Json;
 
 namespace LibrarySystem
 {
-    //该静态类用于存放一些公用操作
+    //该静态类用于存放一些公用操作和变量
     public static class PublicOperations
     {
+        //userID全局变量
+        public static string myUID; //其实是userName
         //打开其他窗口
         public static void OpenForm(Form currentForm, Form newForm)
         {

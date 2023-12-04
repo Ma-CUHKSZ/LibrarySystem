@@ -36,6 +36,7 @@ namespace LibrarySystem
 
             if (result["status"][0] == "True")
             {
+                PublicOperations.myUID = username;
                 HomePage homePage = new HomePage();
                 PublicOperations.OpenForm(this, homePage);
             }
@@ -75,14 +76,25 @@ namespace LibrarySystem
                 { "connect", connectL},
             };
             //窗体启动时先尝试连接，减少卡顿
-            try
+            bool successful = false;
+            for (int i = 0; i < 3; i++)
             {
-                var result = await PublicOperations.NetWork("connect", values);
+                try
+                {
+                    var result = await PublicOperations.NetWork("connect", values);
+                    successful = true;
+                    break;
+                }
+                catch (Exception exception)
+                {
+                    await Task.Delay(500);
+                }
             }
-            catch (Exception exception)
+            if (successful == false)
             {
                 MessageBox.Show("Fail to connect to the server! Please check your network!", "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
             
         }
 
