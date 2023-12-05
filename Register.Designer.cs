@@ -161,7 +161,7 @@ namespace LibrarySystem
             // registerButton
             // 
             this.registerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.registerButton.Font = new System.Drawing.Font("Showcard Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerButton.Font = new System.Drawing.Font("Showcard Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.ForeColor = System.Drawing.Color.Coral;
             this.registerButton.Location = new System.Drawing.Point(607, 670);
             this.registerButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
