@@ -47,10 +47,10 @@ namespace LibrarySystem
             // 
             this.userNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.userNameLabel.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNameLabel.Location = new System.Drawing.Point(92, 54);
-            this.userNameLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.userNameLabel.Location = new System.Drawing.Point(39, 24);
+            this.userNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(492, 56);
+            this.userNameLabel.Size = new System.Drawing.Size(211, 25);
             this.userNameLabel.TabIndex = 0;
             this.userNameLabel.Text = "Enter your username:";
             this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,10 +59,10 @@ namespace LibrarySystem
             // 
             this.checkPasswordLabel.BackColor = System.Drawing.Color.Transparent;
             this.checkPasswordLabel.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPasswordLabel.Location = new System.Drawing.Point(92, 232);
-            this.checkPasswordLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.checkPasswordLabel.Location = new System.Drawing.Point(39, 103);
+            this.checkPasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.checkPasswordLabel.Name = "checkPasswordLabel";
-            this.checkPasswordLabel.Size = new System.Drawing.Size(492, 56);
+            this.checkPasswordLabel.Size = new System.Drawing.Size(211, 25);
             this.checkPasswordLabel.TabIndex = 2;
             this.checkPasswordLabel.Text = "Check the password:";
             this.checkPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,10 +71,10 @@ namespace LibrarySystem
             // 
             this.idLabel.BackColor = System.Drawing.Color.Transparent;
             this.idLabel.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idLabel.Location = new System.Drawing.Point(92, 549);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.idLabel.Location = new System.Drawing.Point(39, 244);
+            this.idLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(492, 56);
+            this.idLabel.Size = new System.Drawing.Size(211, 25);
             this.idLabel.TabIndex = 4;
             this.idLabel.Text = "Enter your studentID:";
             this.idLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,10 +83,10 @@ namespace LibrarySystem
             // 
             this.phoneLabel.BackColor = System.Drawing.Color.Transparent;
             this.phoneLabel.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneLabel.Location = new System.Drawing.Point(92, 315);
-            this.phoneLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.phoneLabel.Location = new System.Drawing.Point(39, 140);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(492, 56);
+            this.phoneLabel.Size = new System.Drawing.Size(211, 25);
             this.phoneLabel.TabIndex = 3;
             this.phoneLabel.Text = "Enter phone numbers:";
             this.phoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,10 +95,10 @@ namespace LibrarySystem
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(92, 144);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.passwordLabel.Location = new System.Drawing.Point(39, 64);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(492, 56);
+            this.passwordLabel.Size = new System.Drawing.Size(211, 25);
             this.passwordLabel.TabIndex = 1;
             this.passwordLabel.Text = "Enter the password:";
             this.passwordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,30 +106,30 @@ namespace LibrarySystem
             // usernameText
             // 
             this.usernameText.Font = new System.Drawing.Font("宋体", 13F);
-            this.usernameText.Location = new System.Drawing.Point(613, 54);
-            this.usernameText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.usernameText.Location = new System.Drawing.Point(263, 24);
+            this.usernameText.Margin = new System.Windows.Forms.Padding(2);
             this.usernameText.Name = "usernameText";
-            this.usernameText.Size = new System.Drawing.Size(760, 52);
+            this.usernameText.Size = new System.Drawing.Size(328, 27);
             this.usernameText.TabIndex = 1;
             this.usernameText.TextChanged += new System.EventHandler(this.usernameText_TextChanged);
             // 
             // idText
             // 
             this.idText.Font = new System.Drawing.Font("宋体", 13F);
-            this.idText.Location = new System.Drawing.Point(613, 549);
-            this.idText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.idText.Location = new System.Drawing.Point(263, 244);
+            this.idText.Margin = new System.Windows.Forms.Padding(2);
             this.idText.Name = "idText";
-            this.idText.Size = new System.Drawing.Size(760, 52);
+            this.idText.Size = new System.Drawing.Size(328, 27);
             this.idText.TabIndex = 8;
             this.idText.TextChanged += new System.EventHandler(this.idText_TextChanged);
             // 
             // passwordText
             // 
             this.passwordText.Font = new System.Drawing.Font("宋体", 13F);
-            this.passwordText.Location = new System.Drawing.Point(613, 144);
-            this.passwordText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.passwordText.Location = new System.Drawing.Point(263, 64);
+            this.passwordText.Margin = new System.Windows.Forms.Padding(2);
             this.passwordText.Name = "passwordText";
-            this.passwordText.Size = new System.Drawing.Size(760, 52);
+            this.passwordText.Size = new System.Drawing.Size(328, 27);
             this.passwordText.TabIndex = 9;
             this.passwordText.UseSystemPasswordChar = true;
             this.passwordText.TextChanged += new System.EventHandler(this.passwordText_TextChanged);
@@ -137,10 +137,10 @@ namespace LibrarySystem
             // passwordCheckText
             // 
             this.passwordCheckText.Font = new System.Drawing.Font("宋体", 13F);
-            this.passwordCheckText.Location = new System.Drawing.Point(613, 232);
-            this.passwordCheckText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.passwordCheckText.Location = new System.Drawing.Point(263, 103);
+            this.passwordCheckText.Margin = new System.Windows.Forms.Padding(2);
             this.passwordCheckText.Name = "passwordCheckText";
-            this.passwordCheckText.Size = new System.Drawing.Size(760, 52);
+            this.passwordCheckText.Size = new System.Drawing.Size(328, 27);
             this.passwordCheckText.TabIndex = 10;
             this.passwordCheckText.UseSystemPasswordChar = true;
             this.passwordCheckText.TextChanged += new System.EventHandler(this.passwordCheckText_TextChanged);
@@ -148,12 +148,12 @@ namespace LibrarySystem
             // phoneNumberText
             // 
             this.phoneNumberText.Font = new System.Drawing.Font("宋体", 13F);
-            this.phoneNumberText.Location = new System.Drawing.Point(613, 315);
-            this.phoneNumberText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.phoneNumberText.Location = new System.Drawing.Point(263, 140);
+            this.phoneNumberText.Margin = new System.Windows.Forms.Padding(2);
             this.phoneNumberText.Multiline = true;
             this.phoneNumberText.Name = "phoneNumberText";
             this.phoneNumberText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.phoneNumberText.Size = new System.Drawing.Size(760, 202);
+            this.phoneNumberText.Size = new System.Drawing.Size(328, 92);
             this.phoneNumberText.TabIndex = 11;
             this.phoneNumberText.UseSystemPasswordChar = true;
             this.phoneNumberText.TextChanged += new System.EventHandler(this.phoneNumberText_TextChanged);
@@ -161,12 +161,13 @@ namespace LibrarySystem
             // registerButton
             // 
             this.registerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.registerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registerButton.Font = new System.Drawing.Font("Showcard Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.ForeColor = System.Drawing.Color.Coral;
-            this.registerButton.Location = new System.Drawing.Point(607, 670);
-            this.registerButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.registerButton.Location = new System.Drawing.Point(260, 298);
+            this.registerButton.Margin = new System.Windows.Forms.Padding(2);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(280, 102);
+            this.registerButton.Size = new System.Drawing.Size(120, 45);
             this.registerButton.TabIndex = 12;
             this.registerButton.Text = "Sign up";
             this.registerButton.UseVisualStyleBackColor = false;
@@ -174,10 +175,10 @@ namespace LibrarySystem
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = global::LibrarySystem.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(1495, 832);
+            this.ClientSize = new System.Drawing.Size(661, 368);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.phoneNumberText);
             this.Controls.Add(this.passwordCheckText);
@@ -190,7 +191,7 @@ namespace LibrarySystem
             this.Controls.Add(this.checkPasswordLabel);
             this.Controls.Add(this.userNameLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Register";
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);

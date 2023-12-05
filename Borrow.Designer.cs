@@ -41,8 +41,8 @@ namespace LibrarySystem
             this.ExactSearch = new System.Windows.Forms.Label();
             this.DetailInfoText = new System.Windows.Forms.TextBox();
             this.PictureLabel = new System.Windows.Forms.Label();
-            this.BookCover = new System.Windows.Forms.PictureBox();
             this.BookDetailInfo = new System.Windows.Forms.Label();
+            this.BookCover = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerOfHomePage)).BeginInit();
             this.splitContainerOfHomePage.Panel1.SuspendLayout();
             this.splitContainerOfHomePage.Panel2.SuspendLayout();
@@ -58,6 +58,7 @@ namespace LibrarySystem
             // splitContainerOfHomePage.Panel1
             // 
             this.splitContainerOfHomePage.Panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.splitContainerOfHomePage.Panel1.BackgroundImage = global::LibrarySystem.Properties.Resources.background2;
             this.splitContainerOfHomePage.Panel1.Controls.Add(this.BookList);
             this.splitContainerOfHomePage.Panel1.Controls.Add(this.ReturnButton);
             this.splitContainerOfHomePage.Panel1.Controls.Add(this.Status);
@@ -85,6 +86,7 @@ namespace LibrarySystem
             // 
             // ReturnButton
             // 
+            this.ReturnButton.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.ReturnButton, "ReturnButton");
             this.ReturnButton.ForeColor = System.Drawing.SystemColors.Highlight;
             this.ReturnButton.Name = "ReturnButton";
@@ -100,6 +102,7 @@ namespace LibrarySystem
             // 
             // BorrowButton
             // 
+            this.BorrowButton.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.BorrowButton, "BorrowButton");
             this.BorrowButton.ForeColor = System.Drawing.SystemColors.Highlight;
             this.BorrowButton.Name = "BorrowButton";
@@ -109,10 +112,12 @@ namespace LibrarySystem
             // BookInfoLabel
             // 
             resources.ApplyResources(this.BookInfoLabel, "BookInfoLabel");
+            this.BookInfoLabel.BackColor = System.Drawing.Color.Transparent;
             this.BookInfoLabel.Name = "BookInfoLabel";
             // 
             // SearchButton
             // 
+            this.SearchButton.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.SearchButton, "SearchButton");
             this.SearchButton.ForeColor = System.Drawing.SystemColors.Highlight;
             this.SearchButton.Name = "SearchButton";
@@ -128,6 +133,7 @@ namespace LibrarySystem
             // ExactSearch
             // 
             resources.ApplyResources(this.ExactSearch, "ExactSearch");
+            this.ExactSearch.BackColor = System.Drawing.Color.Transparent;
             this.ExactSearch.Name = "ExactSearch";
             // 
             // DetailInfoText
@@ -140,22 +146,22 @@ namespace LibrarySystem
             resources.ApplyResources(this.PictureLabel, "PictureLabel");
             this.PictureLabel.Name = "PictureLabel";
             // 
-            // BookCover
-            // 
-            resources.ApplyResources(this.BookCover, "BookCover");
-            this.BookCover.Image = global::LibrarySystem.Properties.Resources.Coverage;
-            this.BookCover.Name = "BookCover";
-            this.BookCover.TabStop = false;
-            // 
             // BookDetailInfo
             // 
             resources.ApplyResources(this.BookDetailInfo, "BookDetailInfo");
             this.BookDetailInfo.Name = "BookDetailInfo";
             // 
+            // BookCover
+            // 
+            this.BookCover.Image = global::LibrarySystem.Properties.Resources.Coverage;
+            resources.ApplyResources(this.BookCover, "BookCover");
+            this.BookCover.Name = "BookCover";
+            this.BookCover.TabStop = false;
+            // 
             // Borrow
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.splitContainerOfHomePage);
             this.Name = "Borrow";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Borrow_FormClosing);

@@ -169,6 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />
+    <None Include="Resources\background2.jpg" />
+    <None Include="Resources\background3.jpg" />
     <Content Include="Resources\icon1.ico" />
     <Content Include="Resources\icon2.ico" />
   </ItemGroup>
